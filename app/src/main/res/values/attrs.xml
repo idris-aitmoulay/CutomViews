@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="color" format="color" />
+    <attr name="begin" format="dimension" />
+    <attr name="end" format="dimension" />
     <declare-styleable name="IdrisView">
         <attr name="circleColor" format="color" />
         <attr name="circleLabel" format="string"></attr>
@@ -7,10 +10,17 @@
     </declare-styleable>
 
     <declare-styleable name="RectangleView">
-        <attr name="color" format="color" />
+        <attr name="color" />
         <attr name="width" format="dimension"></attr>
         <attr name="heigth" format="dimension"></attr>
-        <attr name="begin" format="dimension"></attr>
-        <attr name="end" format="dimension"></attr>
+        <attr name="begin" />
+        <attr name="end" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleView">
+        <attr name="color" />
+        <attr name="begin" />
+        <attr name="end" />
+        <attr name="rayon" format="dimension"></attr>
     </declare-styleable>
 </resources>
