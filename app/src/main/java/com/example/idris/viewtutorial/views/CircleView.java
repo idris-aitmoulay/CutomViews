@@ -43,7 +43,6 @@ public class CircleView extends View {
 
         paint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-        // if attrs null you should didn't do nothing.
         if (set == null)
             return;
 
