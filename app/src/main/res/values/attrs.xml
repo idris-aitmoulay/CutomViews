@@ -6,7 +6,7 @@
         <attr name="labelColor" format="color"></attr>
     </declare-styleable>
 
-    <declare-styleable name="CustomView">
+    <declare-styleable name="RectangleView">
         <attr name="color" format="color" />
         <attr name="width" format="dimension"></attr>
         <attr name="heigth" format="dimension"></attr>

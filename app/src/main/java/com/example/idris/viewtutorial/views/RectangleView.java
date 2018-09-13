@@ -12,7 +12,7 @@ import android.view.View;
 
 import com.example.idris.viewtutorial.R;
 
-public class CustomView extends View {
+public class RectangleView extends View {
     private int color = Color.MAGENTA;
     private int width = 100;
     private int heigth = 100;
@@ -21,22 +21,22 @@ public class CustomView extends View {
     private Rect rect;
     private Paint paint;
 
-    public CustomView(Context context) {
+    public RectangleView(Context context) {
         super(context);
         init(null);
     }
 
-    public CustomView(Context context, @Nullable AttributeSet attrs) {
+    public RectangleView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init(attrs);
     }
 
-    public CustomView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public RectangleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(attrs);
     }
 
-    public CustomView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public RectangleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init(attrs);
     }
