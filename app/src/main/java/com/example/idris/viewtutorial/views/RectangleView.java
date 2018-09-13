@@ -48,10 +48,10 @@ public class RectangleView extends View {
         if (set == null)
             return;
 
-        TypedArray ta = getContext().obtainStyledAttributes(set, R.styleable.CustomView);
-        color = ta.getColor(R.styleable.CustomView_color, color);
-        width = ta.getDimensionPixelSize(R.styleable.CustomView_width, width);
-        heigth = ta.getDimensionPixelSize(R.styleable.CustomView_heigth, heigth);
+        TypedArray ta = getContext().obtainStyledAttributes(set, R.styleable.RectangleView);
+        color = ta.getColor(R.styleable.RectangleView_color, color);
+        width = ta.getDimensionPixelSize(R.styleable.RectangleView_width, width);
+        heigth = ta.getDimensionPixelSize(R.styleable.RectangleView_heigth, heigth);
 
         ta.recycle();
     }
