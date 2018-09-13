@@ -10,5 +10,7 @@
         <attr name="color" format="color" />
         <attr name="width" format="dimension"></attr>
         <attr name="heigth" format="dimension"></attr>
+        <attr name="begin" format="dimension"></attr>
+        <attr name="end" format="dimension"></attr>
     </declare-styleable>
 </resources>

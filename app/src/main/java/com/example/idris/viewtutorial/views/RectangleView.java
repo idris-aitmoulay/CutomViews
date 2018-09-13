@@ -16,6 +16,8 @@ public class RectangleView extends View {
     private int color = Color.MAGENTA;
     private int width = 100;
     private int heigth = 100;
+    private int begin = 10;
+    private int end = 10;
 
 
     private Rect rect;
@@ -52,29 +54,19 @@ public class RectangleView extends View {
         color = ta.getColor(R.styleable.RectangleView_color, color);
         width = ta.getDimensionPixelSize(R.styleable.RectangleView_width, width);
         heigth = ta.getDimensionPixelSize(R.styleable.RectangleView_heigth, heigth);
+        begin = ta.getDimensionPixelSize(R.styleable.RectangleView_begin, begin);
+        end = ta.getDimensionPixelSize(R.styleable.RectangleView_end, end);
 
         ta.recycle();
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
-        rect.left = 10;
-        rect.top = 10;
-        rect.bottom = this.heigth + 10;
-        rect.right = this.width + 10;
-        paint.setColor(this.color);
+        rect.left = begin;
+        rect.top = end;
+        rect.bottom = heigth + end;
+        rect.right = width + begin;
+        paint.setColor(color);
         canvas.drawRect(rect, paint);
-    }
-
-    public void setColor(int color) {
-        this.color = color;
-    }
-
-    public void setHeigth(int heigth) {
-        this.heigth = heigth;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
     }
 }
